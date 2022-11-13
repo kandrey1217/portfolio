@@ -23,7 +23,7 @@ class Score {
 
         //displays score value on screen
         textSize(50);  //sets font size to 50 pixels
-        text(this.points, width / 2, 120);  //displays number of points
+        text(round(this.points), width / 2, 120);  //displays number of points
     }
 
     //adds points each time a Mole is hit

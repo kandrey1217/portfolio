@@ -72,7 +72,7 @@ class Mole {
     //resets the respawn_timer
     reset_respawn_timer() {
         //assigns a random number to the respawn_timer
-        this.respawn_timer = int(random(3 * frameRate(), 5 * frameRate()));
+        this.respawn_timer = int(random(2 * frameRate(), 4 * frameRate()));
     }
 
     //resets the display_timer
