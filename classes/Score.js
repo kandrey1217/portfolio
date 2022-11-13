@@ -1,13 +1,13 @@
 class Score {
     constructor() {
-        var points = 0;  //declares and initializes var points to 0
-        var moles_hit = 0;  //declares and initializes var moles_hit to 0
-        var total_moles = 0;  //declares and initializes var total_moles to 0
+        this.points = 0;  //declares and initializes var points to 0
+        this.moles_hit = 0;  //declares and initializes var moles_hit to 0
+        this.total_moles = 0;  //declares and initializes var total_moles to 0
 
-        var per_hit_pts = 50;  //declares and initializes var per_hit_pts to 50
-        var play_time_mult = 20;  //declares and initializes var play_time_mult to 20
-        var react_time_mult = 15;  //declares and initializes var react_time_mult to 15
-        var accuracy_mult = 10;  //declares and initializes var accuracy_mult to 10
+        this.per_hit_pts = 50;  //declares and initializes var per_hit_pts to 50
+        this.play_time_mult = 20;  //declares and initializes var play_time_mult to 20
+        this.react_time_mult = 15;  //declares and initializes var react_time_mult to 15
+        this.accuracy_mult = 10;  //declares and initializes var accuracy_mult to 10
     }
     
 

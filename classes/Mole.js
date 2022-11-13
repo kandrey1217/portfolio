@@ -1,7 +1,6 @@
 class Mallet {
     //Mallet's constructor
-    constructor(img, sz) {
-        /*this.image_mallet_class = loadImage(img);*/  //creates PImage object and assigns it to image
+    constructor(sz) {
         this.w = sz;  //assigns sz to Mallet variable w
         this.h = int(sz * 1.5);  //calculates the Mallet's height and assigns it to h
     }
@@ -10,9 +9,8 @@ class Mallet {
 class Mole {
     //Mole's constructor
     constructor(img, img2, x, y, sz, scl) {
-        //this.mole_img = loadImage(img);  //creates PImage object and assigns it to mole_img
-        //this.hill_img = loadImage(img2);  //creates PImage object and assigns it to mole_img
-        //this.pos = new PVector(x, y);  //creates PVector with x, y parameters and assigns it to pos
+        this.mole_img = img;
+        this.hill_img = img2;
         this.x = x;
         this.y = y;
         this.size = int(sz * scl);  //calculates the Mole's size and assigns it to size
@@ -47,11 +45,11 @@ class Mole {
     //displays the Mole
     show() {
         if (this.alive && this.display_timer > 0) {  //if Mole is alive and display_timer hasn't run out
-            image(mole_img, this.x, this.y, this.size, this.size);  //displays mole_image at pos.x, pos.y, scaling it to size, size
+            image(this.mole_img, this.x, this.y, this.size, this.size);  //displays mole_image at pos.x, pos.y, scaling it to size, size
             --this.display_timer;  //decrements the display_timer
         }
         else {  //if Mole is dead or display_timer ran out
-            image(hill_img, this.x, this.y, this.size, this.size);  //displays hill_img at pos.x, pos.y, scaling it to size, size
+            image(this.hill_img, this.x, this.y, this.size, this.size);  //displays hill_img at pos.x, pos.y, scaling it to size, size
         }
     }
 

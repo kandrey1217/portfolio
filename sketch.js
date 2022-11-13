@@ -40,7 +40,7 @@ function setup() {
     moles[4] = new Mole(mole_img, hill_img, 630, 210, mole_size, 0.6);
     moles[5] = new Mole(mole_img2, hill_img2, 940, 230, mole_size, 0.6);
 
-    field = new Field(field_img, moles);  //creates a Field object and assigns it to field
+    field = new Field(moles);  //creates a Field object and assigns it to field
 }
 
 

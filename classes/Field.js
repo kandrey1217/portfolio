@@ -1,7 +1,6 @@
 class Field {
     //constructor
-    constructor(img, lst) {
-        //this.image_field_class = loadImage(img);  //creates PImage object and assigns it to image
+    constructor(lst) {
         this.mole_lst = lst;  //assigns lst parameter to Field variable mole_lst
     }
 
