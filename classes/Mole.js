@@ -19,7 +19,7 @@ class Mole {
         this.display_timer = int(random(2 * frameRate, 5 * frameRate));  //initializes the display_timer
         this.respawn_timer = int(random(1 * frameRate, 3 * frameRate));  //initializes the respawn_timer
 
-        this.mallet = new Mallet("mallet.png", 90);  //creates Mallet object and assigns it to mallet
+        //mallet = new Mallet(90);  //creates Mallet object and assigns it to mallet
 
         //randomly initializes alive to true or false
         if (int(random(2)) == 0) {  //if random number is 0

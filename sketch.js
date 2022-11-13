@@ -13,16 +13,12 @@ let num_moles;  //declares int num_moles
 
 let moles = [];  //declares Mole[] moles
 let field;  //declares Field field
+let mallet;
 
 
 //called once at the start of the program
 function setup() {
     createCanvas(1100, 650);  //sets the window size to 1100 by 650
-    //field_img = "field.jpg";  //initializes field_img
-    //mole_img = "mole.png";  //initializes mole_img
-    //mole_img2 = "mole2.png";  //initializes mole_img2
-    //hill_img = "mole_hill.png";  //initializes hill_img
-    //hill_img2 = "mole_hill2.png";  //initializes hill_img2
 
     game_time = 30;  //sets game_time to 30 seconds
     score = new Score();  //creates a Score object and assigns it to score
@@ -41,6 +37,7 @@ function setup() {
     moles[5] = new Mole(mole_img2, hill_img2, 940, 230, mole_size, 0.6);
 
     field = new Field(moles);  //creates a Field object and assigns it to field
+    mallet = new Mallet(90);
 }
 
 
