@@ -16,8 +16,8 @@ class Mole {
         this.size = int(sz * scl);  //calculates the Mole's size and assigns it to size
         this.scale = scl;  //assigns scl parameter to Mole variable scale
 
-        this.display_timer = int(random(2 * frameRate, 5 * frameRate));  //initializes the display_timer
-        this.respawn_timer = int(random(1 * frameRate, 3 * frameRate));  //initializes the respawn_timer
+        this.display_timer = int(random(2 * frameRate(), 5 * frameRate()));  //initializes the display_timer
+        this.respawn_timer = int(random(1 * frameRate(), 3 * frameRate()));  //initializes the respawn_timer
 
         //mallet = new Mallet(90);  //creates Mallet object and assigns it to mallet
 
@@ -72,13 +72,13 @@ class Mole {
     //resets the respawn_timer
     reset_respawn_timer() {
         //assigns a random number to the respawn_timer
-        this.respawn_timer = int(random(3 * frameRate, 5 * frameRate));
+        this.respawn_timer = int(random(3 * frameRate(), 5 * frameRate()));
     }
 
     //resets the display_timer
     reset_display_timer() {
         //assigns a random number to the display_timer
-        this.display_timer = int(random(2 * frameRate, 4 * frameRate));
+        this.display_timer = int(random(2 * frameRate(), 4 * frameRate()));
     }
 
     //removes the Mole

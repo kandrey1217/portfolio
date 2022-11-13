@@ -34,7 +34,7 @@ class Score {
     //adds points based on reaction time
     reaction_bonus(time) {
         //calculates reaction time points and increments points by that value
-        this.points += (time / frameRate) * this.react_time_mult;
+        this.points += (time / frameRate()) * this.react_time_mult;
     }
 
     //calculates the final score
