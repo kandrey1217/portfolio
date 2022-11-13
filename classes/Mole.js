@@ -33,7 +33,7 @@ class Mole {
 
     //changes the state of the Mole
     update() {
-        if (this.respawn_timer == 0) {  //if it's time for the Mole to be respawned
+        if (this.respawn_timer <= 0) {  //if it's time for the Mole to be respawned
             this.alive = true;  //respawns the Mole
             this.reset_respawn_timer();  //resets the respawn_timer
             this.reset_display_timer();  //resets the display_timer

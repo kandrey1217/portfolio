@@ -29,7 +29,7 @@ function setup() {
     //moles = new Mole[num_moles];  //creates an array of Mole objects and assigns it to moles
 
     //initializes the num_moles Mole objects
-    moles[0] = new Mole(mole_img, hill_img, 230, 325, mole_size, 1);
+    moles[0] = new Mole(mole_img, hill_img, 230, 325, mole_size, 1.0);
     moles[1] = new Mole(mole_img2, hill_img2, 760, 280, mole_size, 0.9);
     moles[2] = new Mole(mole_img, hill_img, 80, 230, mole_size, 0.8);
     moles[3] = new Mole(mole_img2, hill_img2, 440, 250, mole_size, 0.8);
