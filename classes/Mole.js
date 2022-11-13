@@ -64,7 +64,7 @@ class Mole {
                 mallet.w * this.scale, mallet.h * this.scale);
 
             score.mole_hit();  //adds points to score for hitting a Mole
-            score.reaction_bonus(display_timer);  //adds points to score based on reaction time
+            score.reaction_bonus(this.display_timer);  //adds points to score based on reaction time
             ++score.moles_hit;  //increments Score object's moles_hit variable
         }
     }
